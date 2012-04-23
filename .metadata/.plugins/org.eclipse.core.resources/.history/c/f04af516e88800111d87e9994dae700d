@@ -1,0 +1,19 @@
+<FrameLayout 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent" 
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<ImageView 
+	    android:id="@+id/img1"
+		android:src="@drawable/ic_launcher"
+		android:scaleType="fitCenter"
+		android:layout_height="fill_parent"
+		android:layout_width="fill_parent"/>
+
+	<TextView
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:gravity="center"
+	    android:text="Learn-Android.com"
+	    android:textColor="#000000"
+	    android:textSize="24sp" />
+</FrameLayout>

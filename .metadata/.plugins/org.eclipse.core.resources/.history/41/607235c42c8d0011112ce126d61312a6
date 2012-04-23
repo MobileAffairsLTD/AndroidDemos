@@ -1,0 +1,20 @@
+package videolib.seminar.com;
+
+import android.app.Application;
+import android.database.Cursor;
+
+
+public class VideoLibApplication extends Application {
+
+	public String lastSearchPattern;
+	public int lastVisibleMoviePosition;
+	public Cursor activeMoviesCursor;
+	public ConfigurationManager configManager;
+	
+	@Override
+	public void onCreate() {	
+		super.onCreate();		
+		configManager = new ConfigurationManager();
+		configManager.Load();		
+	}
+}

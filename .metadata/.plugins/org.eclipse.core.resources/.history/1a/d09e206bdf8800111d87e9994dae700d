@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/item1" android:showAsAction="ifRoom|withText" android:titleCondensed="i1" 
+        android:title="item 1"></item>
+    <item android:id="@+id/item2" android:showAsAction="ifRoom|withText" android:titleCondensed="i2" 
+        android:title="item 2">
+        <menu>
+            <item android:id="@+id/item3" android:title="item 3" android:titleCondensed="i3"/>
+        </menu>
+    </item>
+    <item android:id="@+id/item4" android:titleCondensed="i4" android:title="item 4"></item>
+    <item android:id="@+id/item5" android:titleCondensed="i5" android:title="item 5"></item>
+</menu>

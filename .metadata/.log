@@ -1,0 +1,169 @@
+
+!ENTRY org.eclipse.help.base 4 4 2012-04-22 20:16:49.130
+!MESSAGE Help documentation could not be indexed completely.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2012-04-22 20:16:49.130
+!MESSAGE Help document /org.eclipse.mylyn.help.ui/doc/notices.html cannot be opened.
+!SESSION 2012-04-22 20:31:10.403 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.7.0_03
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2012-04-22 20:31:15.317
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.team.core 4 0 2012-04-22 20:31:16.112
+!MESSAGE Could not read metadata for 'D:\AndroidSeminars\DemosWorkspace\.metadata\.plugins\org.eclipse.core.resources\.projects\4.PreferencesDemo\.indexes\properties.index'. Unexpected version: 0.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Could not read metadata for 'D:\AndroidSeminars\DemosWorkspace\.metadata\.plugins\org.eclipse.core.resources\.projects\4.PreferencesDemo\.indexes\properties.index'. Unexpected version: 0.
+	at org.eclipse.core.internal.localstore.Bucket.load(Bucket.java:303)
+	at org.eclipse.core.internal.properties.PropertyBucket.load(PropertyBucket.java:258)
+	at org.eclipse.core.internal.localstore.Bucket.load(Bucket.java:274)
+	at org.eclipse.core.internal.localstore.BucketTree.loadBucketFor(BucketTree.java:115)
+	at org.eclipse.core.internal.properties.PropertyManager2.getProperty(PropertyManager2.java:135)
+	at org.eclipse.core.internal.resources.Resource.getPersistentProperty(Resource.java:1179)
+	at org.eclipse.team.core.RepositoryProvider.isShared(RepositoryProvider.java:634)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getRuleFactory(TeamHookDispatcher.java:104)
+	at org.eclipse.core.internal.resources.Rules.factoryFor(Rules.java:93)
+	at org.eclipse.core.internal.resources.Rules.refreshRule(Rules.java:166)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1653)
+	at org.eclipse.core.internal.refresh.RefreshJob.runInWorkspace(RefreshJob.java:167)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2012-04-22 20:31:16.112
+!MESSAGE Could not read metadata for 'D:\AndroidSeminars\DemosWorkspace\.metadata\.plugins\org.eclipse.core.resources\.projects\4.PreferencesDemo\.indexes\properties.index'. Unexpected version: 0.
+
+!ENTRY org.eclipse.team.core 4 0 2012-04-22 20:31:16.315
+!MESSAGE Could not read metadata for 'D:\AndroidSeminars\DemosWorkspace\.metadata\.plugins\org.eclipse.core.resources\.projects\4.PreferencesDemo\.indexes\properties.index'. Unexpected version: 0.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Could not read metadata for 'D:\AndroidSeminars\DemosWorkspace\.metadata\.plugins\org.eclipse.core.resources\.projects\4.PreferencesDemo\.indexes\properties.index'. Unexpected version: 0.
+	at org.eclipse.core.internal.localstore.Bucket.load(Bucket.java:303)
+	at org.eclipse.core.internal.properties.PropertyBucket.load(PropertyBucket.java:258)
+	at org.eclipse.core.internal.localstore.Bucket.load(Bucket.java:274)
+	at org.eclipse.core.internal.localstore.BucketTree.loadBucketFor(BucketTree.java:115)
+	at org.eclipse.core.internal.properties.PropertyManager2.getProperty(PropertyManager2.java:135)
+	at org.eclipse.core.internal.resources.Resource.getPersistentProperty(Resource.java:1179)
+	at org.eclipse.team.core.RepositoryProvider.isShared(RepositoryProvider.java:634)
+	at org.eclipse.team.internal.core.TeamResourceChangeListener.resourceChanged(TeamResourceChangeListener.java:52)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:149)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:395)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1530)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:45)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2012-04-22 20:31:16.315
+!MESSAGE Could not read metadata for 'D:\AndroidSeminars\DemosWorkspace\.metadata\.plugins\org.eclipse.core.resources\.projects\4.PreferencesDemo\.indexes\properties.index'. Unexpected version: 0.
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-04-22 20:31:17.282
+!MESSAGE loadAndParseRClass failed to find class com.mobileaffairs.seminars.prefdemo.R
+!STACK 0
+java.lang.ClassFormatError: Incompatible magic value 0 in class file <Unknown>
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(Unknown Source)
+	at java.lang.ClassLoader.defineClass(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.resources.manager.ProjectClassLoader.loadFromProject(ProjectClassLoader.java:147)
+	at com.android.ide.eclipse.adt.internal.resources.manager.ProjectClassLoader.findClass(ProjectClassLoader.java:69)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.Class.getDeclaredClasses0(Native Method)
+	at java.lang.Class.getDeclaredClasses(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.resources.manager.CompiledResourcesMonitor.parseClass(CompiledResourcesMonitor.java:250)
+	at com.android.ide.eclipse.adt.internal.resources.manager.CompiledResourcesMonitor.loadAndParseRClass(CompiledResourcesMonitor.java:220)
+	at com.android.ide.eclipse.adt.internal.resources.manager.CompiledResourcesMonitor.projectOpenedWithWorkspace(CompiledResourcesMonitor.java:183)
+	at com.android.ide.eclipse.adt.internal.resources.manager.GlobalProjectMonitor.addProjectListener(GlobalProjectMonitor.java:397)
+	at com.android.ide.eclipse.adt.internal.resources.manager.CompiledResourcesMonitor.setupMonitor(CompiledResourcesMonitor.java:61)
+	at com.android.ide.eclipse.adt.internal.resources.manager.ResourceManager.setup(ResourceManager.java:121)
+	at com.android.ide.eclipse.adt.AdtPlugin.startEditors(AdtPlugin.java:1445)
+	at com.android.ide.eclipse.adt.AdtPlugin.start(AdtPlugin.java:261)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:299)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:476)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:345)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1207)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.core.internal.events.BuildManager.instantiateBuilder(BuildManager.java:896)
+	at org.eclipse.core.internal.events.BuildManager.initializeBuilder(BuildManager.java:849)
+	at org.eclipse.core.internal.events.BuildManager.getBuilder(BuildManager.java:538)
+	at org.eclipse.core.internal.events.BuildManager.getBuilder(BuildManager.java:567)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:237)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2012-04-22 20:34:28.631 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.7.0_03
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2012-04-22 20:34:33.015
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2012-04-22 20:35:15.844 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.7.0_03
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2012-04-22 20:35:19.276
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2012-04-22 20:50:23.380
+!MESSAGE No valid Android XML Editor Delegate found for file /2.UI_Toast_Alert/AndroidManifest.out.xml [Res null, type null]
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-04-22 21:31:23.382
+!MESSAGE No command output when running: 'am start -n com.mobileaffairs.seminars.prefdemo/com.mobileaffairs.seminars.prefdemo.PreferencesDemoActivity -a android.intent.action.MAIN -c android.intent.category.LAUNCHER' on device emulator-5554
+!STACK 0
+com.android.ddmlib.ShellCommandUnresponsiveException
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:408)
+	at com.android.ddmlib.Device.executeShellCommand(Device.java:388)
+	at com.android.ide.eclipse.adt.internal.launch.ActivityLaunchAction.doLaunchAction(ActivityLaunchAction.java:75)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.launchApp(AndroidLaunchController.java:1201)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.simpleLaunch(AndroidLaunchController.java:877)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.access$4(AndroidLaunchController.java:861)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController$3.run(AndroidLaunchController.java:709)
+
+!ENTRY org.eclipse.core.resources 4 273 2012-04-22 21:44:39.378
+!MESSAGE Problems cleaning up history store.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Could not read metadata for 'D:\AndroidSeminars\DemosWorkspace\.metadata\.plugins\org.eclipse.core.resources\.projects\4.PreferencesDemo\.indexes\history.index'. Unexpected version: 0.
+	at org.eclipse.core.internal.localstore.Bucket.load(Bucket.java:303)
+	at org.eclipse.core.internal.localstore.Bucket.load(Bucket.java:274)
+	at org.eclipse.core.internal.localstore.BucketTree.internalAccept(BucketTree.java:98)
+	at org.eclipse.core.internal.localstore.BucketTree.accept(BucketTree.java:73)
+	at org.eclipse.core.internal.localstore.HistoryStore2.clean(HistoryStore2.java:157)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1156)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2375)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor$5.run(IDEWorkbenchAdvisor.java:508)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2012-04-22 21:44:39.379
+!MESSAGE Could not read metadata for 'D:\AndroidSeminars\DemosWorkspace\.metadata\.plugins\org.eclipse.core.resources\.projects\4.PreferencesDemo\.indexes\history.index'. Unexpected version: 0.

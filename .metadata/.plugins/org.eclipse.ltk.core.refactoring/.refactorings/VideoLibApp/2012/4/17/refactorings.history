@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;videolib.seminar.com&apos; to &apos;com.mobileaffairs.seminar.videolib&apos;&#x0D;&#x0A;- Original project: &apos;VideoLibApp&apos;&#x0D;&#x0A;- Original element: &apos;VideoLibApp/src/videolib.seminar.com&apos;&#x0D;&#x0A;- Renamed element: &apos;VideoLibApp/src/com.mobileaffairs.seminar.videolib&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;videolib.seminar.com&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;videolib.seminar.com" name="com.mobileaffairs.seminar.videolib" qualified="false" references="true" stamp="1335175920862" textual="false" version="1.0"/>
+</session>

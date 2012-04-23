@@ -1,0 +1,12 @@
+package com.mobileaffairs.seminar.videolib;
+
+public class ConfigurationManager {
+
+	public int maxRecords = 10;
+	public int evenMoreRecords= 50;
+	
+	public void Load(){
+		
+	}
+}
+

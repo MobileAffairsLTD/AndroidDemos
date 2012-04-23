@@ -1,0 +1,28 @@
+package lit.view.demo.com;
+
+
+import android.app.Activity;
+import android.app.ListActivity;
+import android.database.DataSetObserver;
+import android.os.Bundle;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ListAdapter;
+
+public class ListViewDemoActivity extends ListActivity {
+	
+	
+	public 
+	
+    /** Called when the activity is first created. */
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
+        
+        		
+         this.setListAdapter(new ArrayAdapter<String>(this,R.layout.list_item,COUNTRIES)
+		};
+    
+}

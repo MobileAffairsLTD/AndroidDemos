@@ -1,0 +1,5 @@
+package demo.pref.com;
+
+public class ReadPrefsActivity  extends Activity {
+	
+}

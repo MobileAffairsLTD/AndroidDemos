@@ -1,0 +1,57 @@
+package asynctask.com;
+
+
+import android.app.Activity;
+import android.os.AsyncTask;
+import android.os.Bundle;
+import android.widget.ProgressBar;
+import android.widget.Toast;
+
+public class Async_UsingAsyncTaskActivity extends Activity {
+    /** Called when the activity is first created. */
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
+    }
+    
+    public void runLongOperation(View v){    	
+		
+    	new AsyncTask<Integer,Integer,Integer>(){
+
+			@Override
+			protected void onPreExecute() {
+				ProgressBar bar = (ProgressBar)Async_UsingAsyncTaskActivity.this.findViewById(R.id.progressBar);
+				bar.setProgress(0);
+				bar.setMax(100);
+			}
+			
+			@Override
+			protected void onProgressUpdate(Integer... values) {
+				ProgressBar bar = (ProgressBar)Async_UsingAsyncTaskActivity.this.findViewById(R.id.progressBar);
+				bar.setProgress(values[0]);
+			}
+			
+			@Override
+			protected Integer doInBackground(Integer... params) {
+				
+				for(int i=0;i<100;i++){
+					try {
+						Thread.sleep(500);//do a hard and long work here...
+					} catch (InterruptedException e) {
+						e.printStackTrace();
+					}					
+					this.publishProgress(new Integer(i));
+				}
+				return 0;
+			}
+			
+			@Override
+			protected void onPostExecute(Integer result) {
+				Toast.makeText(Async_UsingAsyncTaskActivity.this, "Job done", Toast.LENGTH_LONG);
+			}
+			
+		}.execute(new Integer[]{1});
+		
+    }
+}

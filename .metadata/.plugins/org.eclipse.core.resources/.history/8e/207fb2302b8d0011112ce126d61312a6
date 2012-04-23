@@ -1,0 +1,58 @@
+package com.mobileaffairs.seminar.services;
+
+import android.app.Service;
+import android.content.Intent;
+import android.os.Binder;
+import android.os.IBinder;
+
+public class MyService extends Service {
+
+public static final  String MYCUSTOMINTENT="my.custom.intent.com";
+	
+	//do not do this as it may cause memory leaks  - according to Geoff Bruckner,Dec 2009
+	//	public class LocalBinder extends Binder{
+	//		MyService getService(){
+	//			return MyService.this;
+	//		}
+	//	}
+	//private final IBinder binder = new LocalBinder();	
+	
+	 protected void progressUpdate(Integer progress) {
+	        Intent i = new Intent();
+	        i.setAction(MYCUSTOMINTENT);
+	        i.putExtra("progress",progress);
+	        this.getApplicationContext().sendBroadcast(i);
+	    }
+	 
+	
+	@Override
+	public IBinder onBind(Intent arg0) {
+		//return new LocalBinder
+		return new LocalBinder<MyService>(this);
+	}
+	
+	@Override
+	public void onStart(Intent intent, int startId) {
+		
+		new Thread(new Runnable(){
+
+			public void run() {
+				
+				for(int i=0;i<=100;i++){
+					try {
+						Thread.sleep(100);
+						progressUpdate(i);
+					} catch (InterruptedException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+				}
+			}
+			
+		}
+		).start();
+	}
+	
+
+		
+}

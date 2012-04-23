@@ -1,0 +1,126 @@
+package videolib.seminar.com;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.StatusLine;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.util.EntityUtils;
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import android.accounts.Account;
+import android.content.AbstractThreadedSyncAdapter;
+import android.content.ContentProviderClient;
+import android.content.ContentValues;
+import android.content.Context;
+import android.content.SyncResult;
+import android.database.Cursor;
+import android.net.Uri;
+import android.os.Bundle;
+import android.util.Log;
+
+public class VideoLibSyncAdapter extends AbstractThreadedSyncAdapter {
+
+	public VideoLibSyncAdapter(Context context, boolean autoInitialize) {
+		super(context, autoInitialize);
+	
+	}	
+	@Override
+	public void onPerformSync(Account account, Bundle extras, String authority,
+			ContentProviderClient provider, SyncResult syncResult) {
+		
+		String videosJson = readVideosFromRemoteService();	
+		try {
+			JSONArray jsonArray = new JSONArray(videosJson);
+			Log.i("SyncAdapter",
+					"Number of entries " + jsonArray.length());
+			for (int i = 0; i < jsonArray.length(); i++) {
+				JSONObject jsonObject = jsonArray.getJSONObject(i);
+				Cursor cs = provider.getLocalContentProvider().query(Uri.parse(VideoLibContentProvider.CONTENT_URI+"/" +jsonObject.getString("id")), null, null, null, null);
+				long count = cs.getCount();
+				cs.close();
+				if(count==0)
+				{
+					ContentValues values = new  ContentValues();
+					values.put("_id", jsonObject.getString("id"));
+					values.put("title", jsonObject.getString("title"));
+					values.put("duration", jsonObject.getString("duration"));
+					values.put("videoUrl", jsonObject.getString("url"));
+					byte[] imageBytes =  readImage(jsonObject.getString("thumbnail_small"));
+					if(imageBytes!=null && imageBytes.length>0){
+						values.put("thumbnail", imageBytes);	
+					}					
+					provider.getLocalContentProvider().insert(VideoLibContentProvider.CONTENT_URI, values);
+				}				
+				syncResult.fullSyncRequested  = true;				
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			
+		}		
+	}
+	
+	private String readVideosFromRemoteService() {
+		StringBuilder builder = new StringBuilder();
+		HttpClient client = new DefaultHttpClient();
+		HttpGet httpGet = new HttpGet(
+			"http://vimeo.com/api/v2/group/shortfilms/videos.json");
+			
+		try {
+			HttpResponse response = client.execute(httpGet);
+			StatusLine statusLine = response.getStatusLine();
+			int statusCode = statusLine.getStatusCode();
+			if (statusCode == 200) {
+				HttpEntity entity = response.getEntity();
+				InputStream content = entity.getContent();
+				BufferedReader reader = new BufferedReader(
+						new InputStreamReader(content));
+				String line;
+				while ((line = reader.readLine()) != null) {
+					builder.append(line);
+				}
+			} else {
+				Log.e("readVideos", "Failed to download file");
+			}
+		} catch (ClientProtocolException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return builder.toString();
+	}
+	
+	private byte[]  readImage(String url) {
+		HttpClient client = new DefaultHttpClient();
+		HttpGet httpGet = new HttpGet(url);
+		try {
+			HttpResponse response = client.execute(httpGet);
+			StatusLine statusLine = response.getStatusLine();
+			int statusCode = statusLine.getStatusCode();			
+			if (statusCode == 200) {				
+				HttpEntity entity = response.getEntity();
+				byte[] imageBytes =  EntityUtils.toByteArray(entity);
+				return imageBytes;				
+			} else {
+				Log.e("readImage", "Failed to download file");
+			}
+		
+		} catch (ClientProtocolException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+}
+
+
+

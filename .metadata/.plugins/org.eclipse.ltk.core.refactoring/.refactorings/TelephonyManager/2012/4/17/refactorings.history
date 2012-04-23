@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;telephony.manager.com&apos; to &apos;com.mobileaffairs.seminar.telephony&apos;&#x0D;&#x0A;- Original project: &apos;TelephonyManager&apos;&#x0D;&#x0A;- Original element: &apos;TelephonyManager/src/telephony.manager.com&apos;&#x0D;&#x0A;- Renamed element: &apos;TelephonyManager/src/com.mobileaffairs.seminar.telephony&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;telephony.manager.com&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;telephony.manager.com" name="com.mobileaffairs.seminar.telephony" qualified="false" references="true" stamp="1335175072286" textual="false" version="1.0"/>
+</session>

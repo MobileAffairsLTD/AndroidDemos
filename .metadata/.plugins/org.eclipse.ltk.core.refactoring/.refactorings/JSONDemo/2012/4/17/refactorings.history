@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;json.demo.com&apos; to &apos;com.mobileaffairs.seminar.json&apos;&#x0D;&#x0A;- Original project: &apos;JSONDemo&apos;&#x0D;&#x0A;- Original element: &apos;JSONDemo/src/json.demo.com&apos;&#x0D;&#x0A;- Renamed element: &apos;JSONDemo/src/com.mobileaffairs.seminar.json&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;json.demo.com&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;json.demo.com" name="com.mobileaffairs.seminar.json" qualified="false" references="true" stamp="1335120235351" textual="false" version="1.0"/>
+</session>

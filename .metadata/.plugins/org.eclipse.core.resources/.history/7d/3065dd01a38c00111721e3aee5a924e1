@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+        <PreferenceCategory
+                android:title="General category">
+                <CheckBoxPreference
+                     android:defaultValue="true"
+                     android:title="Bool/Chckbox"                       
+                     android:summary="Click to check or uncheck"
+                     android:key="key1" android:icon="@drawable/icn1"/>
+               
+        </PreferenceCategory>
+        <PreferenceCategory
+                android:title="Other category">
+        <EditTextPreference
+                android:name="EditText Preference"
+                android:summary="This allows you to enter a string"
+                android:defaultValue="Nothing"
+                android:title="ops edit me"
+                android:key="editTextPref" />
+        <RingtonePreference
+                android:name="Ringtone Preference"
+                android:summary="Select a ringtone"
+                android:title="Ringtones"
+                android:key="ringtonePref" />
+         <ListPreference
+                      android:title="List of settings"
+                      android:summary="Select one item"
+                      android:key="listSetting"
+                      android:defaultValue="item1"
+                      android:entries="@array/listArray"
+                      android:entryValues="@array/listValues" />
+        <PreferenceScreen
+                android:key="SecondPrefScreen"
+                android:title="Second PreferenceScreen"
+                android:summary="This is a second PreferenceScreen">
+                <EditTextPreference
+                        android:name="An other EditText Preference"
+                        android:summary="This is a preference in the second PreferenceScreen"
+                        android:title="Edit text"
+                        android:key="SecondEditTextPref" />
+        </PreferenceScreen>
+        <Preference
+                android:title="Custom Preference"
+                android:summary="We have addedd click listener here"
+                android:key="customPref" />
+        </PreferenceCategory>
+</PreferenceScreen>

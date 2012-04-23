@@ -1,0 +1,7 @@
+package demos.com;
+
+import android.database.sqlite.SQLiteOpenHelper;
+
+public class CustomOpenSQLiteHelper extends SQLiteOpenHelper
+
+}

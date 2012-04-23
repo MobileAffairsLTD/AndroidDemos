@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, DrawablesActivity!</string>
+    <string name="app_name">Drawables</string>
+    <string name="next">Next</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="back">Back</string>
+    <string name="enter_your_last_name">Enter your last name</string>
+    <string name="enter_your_first_name">Enter your first name</string>
+    <string name="togglebutton">ToggleButton</string>
+
+</resources>

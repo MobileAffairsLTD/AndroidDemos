@@ -1,0 +1,40 @@
+package com.mobileaffairs.seminar.videolib;
+
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteDatabase.CursorFactory;
+import android.database.sqlite.SQLiteOpenHelper;
+
+public class VideoLibDatabase extends SQLiteOpenHelper  {
+
+	public VideoLibDatabase(Context context, String name,
+			CursorFactory factory, int version) {
+		super(context, name, factory, version);		
+	}
+	
+	private static int getVersion(Context context){
+		int ver=1;
+        try
+        {
+        	ver= context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionCode;
+        }
+        catch(Exception ex){        	
+        }
+        return ver;
+	}
+	
+	public VideoLibDatabase(Context context,CursorFactory factory){		       
+        super(context, "videodb",factory, VideoLibDatabase.getVersion(context));	
+	}
+	
+	@Override
+	public void onCreate(SQLiteDatabase db) {
+		db.execSQL("create table videos(_id INTEGER PRIMARY KEY, int,title VARCHAR(100),duration INTEGER,dateCreated datetime,videoUrl VARCHAR(500),thumbnail BLOB)");		
+		db.execSQL("create table contacts(_id INTEGER PRIMARY KEY,firstname VARCHAR(100),lastname VARCHAR(100),email VARCHAR(100),dateCreated datetime)");
+	}
+	
+	@Override
+	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+		
+	}
+}

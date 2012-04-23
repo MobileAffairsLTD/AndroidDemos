@@ -1,0 +1,28 @@
+package demos.com;
+
+import android.app.Activity;
+import android.content.ContentProviderClient;
+import android.database.Cursor;
+import android.os.Bundle;
+import android.provider.ContactsContract;
+import android.provider.ContactsContract.Contacts;
+import android.util.Log;
+
+public class ContentProviderActivity extends Activity {
+    /** Called when the activity is first created. */
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
+        
+       
+       String[] projection = new String[]{Contacts._ID,Contacts.DISPLAY_NAME};
+       Cursor cursor =  getContentResolver().query(ContactsContract.Contacts.CONTENT_URI,projection,"",null,null);
+       cursor.moveToFirst();
+       while(cursor.moveToNext())
+       {
+    	   Log.i("ContentPrDemo",cursor.getString(cursor.getColumnIndex(Contacts.DISPLAY_NAME)))
+       }
+       cursor.close();
+    }
+}

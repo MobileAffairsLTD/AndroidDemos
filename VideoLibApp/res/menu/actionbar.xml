@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/itemVideos" android:title="Videos" android:showAsAction="always" ></item>
+    <item android:id="@+id/itemFeeds" android:title="Feeds" android:showAsAction="always"></item>
+    <item android:id="@+id/itemSync" android:title="Sync" android:showAsAction="ifRoom"></item>
+    <item android:id="@+id/itemSettings" android:title="Settings" android:showAsAction="ifRoom"></item>
+</menu>

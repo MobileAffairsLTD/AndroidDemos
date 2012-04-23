@@ -1,0 +1,36 @@
+	<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent">
+	    <TextView
+	    	android:layout_x="10px"
+	    	android:layout_y="110px"
+	    	android:text="First Name"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content" />
+	    <EditText
+	    	android:layout_x="150px"
+	    	android:layout_y="100px"
+	    	android:width="100px"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content" />
+	    <TextView
+	    	android:layout_x="10px"
+	    	android:layout_y="160px"
+	    	android:text="Last Name"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content" />
+	    	<EditText
+	    	android:layout_x="150px"
+	    	android:layout_y="150px"
+	    	android:width="100px"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content" />
+	    	<Button
+	    	    android:id="@+id/backbutton"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_x="224dp"
+	    	    android:layout_y="159dp"
+	    	    android:text="@string/next" />
+
+	</AbsoluteLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, JSONDemoActivity!</string>
+    <string name="app_name">JSONDemo</string>
+    <string name="jsonString">[{“field2”:”str value”,“field2”:123,“field3”:[ {f1:”str value”,”active”:true}]}]</string>
+
+</resources>

@@ -1,0 +1,57 @@
+package com.mobileaffairs.seminar.videolib;
+
+
+import android.app.Service;
+import android.content.ContentProviderClient;
+import android.content.Intent;
+import android.content.SyncResult;
+import android.os.IBinder;
+
+public class SyncService extends Service {	
+	 private static final Object sSyncAdapterLock = new Object();
+	    public static String CUSTOM_INTENT="data.videolib.adnroid.seminar.com.syncservice.progress";
+	    private static VideoLibSyncAdapter sSyncAdapter = null;
+	    @Override
+	    public void onCreate() {
+	        synchronized (sSyncAdapterLock) {
+	            if (sSyncAdapter == null) {
+	                sSyncAdapter = new VideoLibSyncAdapter(getApplicationContext(), true);
+	            }
+	        }
+	    }
+	    
+	    @Override
+	    public void onStart(Intent intent, int startId) {
+	    	// TODO Auto-generated method stub
+	    	
+	    	 new Thread(new Runnable() {
+				
+				public void run() {
+					ContentProviderClient provider=  getContentResolver().acquireContentProviderClient(VideoLibContentProvider.PROVIDER_NAME);
+			    	SyncResult sc = new  SyncResult();
+			    	progressUpdate(1);
+			    	try{
+			    		sSyncAdapter.onPerformSync(null, null, null, provider, sc);		
+			    	}
+			    	finally{
+			    		progressUpdate(100);
+			    	}
+				}
+			}).start();	    	
+	    }
+
+	    @Override
+	    public IBinder onBind(Intent intent) {
+	        return sSyncAdapter.getSyncAdapterBinder();
+	    }
+	    
+	    
+	    protected void progressUpdate(Integer progress) {
+	        Intent i = new Intent();
+	        i.setAction(CUSTOM_INTENT);
+	        i.putExtra("progress",progress);
+	        this.getApplicationContext().sendBroadcast(i);
+	    }
+	    
+}
+

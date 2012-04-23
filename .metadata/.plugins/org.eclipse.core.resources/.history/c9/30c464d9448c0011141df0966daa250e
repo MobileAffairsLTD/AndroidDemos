@@ -1,0 +1,124 @@
+package demo.com;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+
+import android.app.Activity;
+import android.content.Context;
+import android.os.Bundle;
+import android.os.Environment;
+import android.util.Log;
+import android.view.View;
+
+public class FilesDemoActivity extends Activity {
+	/** Called when the activity is first created. */
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.main);
+
+	}
+
+	public void HandleFileIO(View button) {
+
+		
+		try {
+			FileOutputStream os = new FileOutputStream(new File(this.getFilesDir()+"myfile1.txt"));
+		} catch (FileNotFoundException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		
+		
+		
+		
+		// create file in the internal storage
+		try {
+			FileOutputStream output = this.openFileOutput("demo1.txt",
+					Context.MODE_PRIVATE);
+			OutputStreamWriter writer = new OutputStreamWriter(output);
+			writer.write("hehehehehe");
+			writer.flush();
+			writer.close();
+
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		// read from internal storage
+		try {
+
+			FileInputStream input = this.openFileInput("demo1.txt");
+			InputStreamReader reader = new InputStreamReader(input);
+			char[] buf = new char[256];
+			StringBuilder sb = new StringBuilder();
+			int charsRead = reader.read(buf, 0, buf.length);
+			while (charsRead > 0) {
+				sb.append(buf);
+				charsRead = reader.read(buf, 0, buf.length);
+			}
+			Log.i("FileDemo", sb.toString());
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		// check if file exists
+		File file = new File(this.getFilesDir() + "/demo1.txt");
+		if (file.exists()) {
+			Log.i("FileDemo", "yes");
+		} else {
+			Log.i("FileDemo", "no");
+
+		}
+
+		// delete file
+		this.deleteFile("demo1.txt");
+
+		if (file.exists()) {
+			Log.i("FileDemo", "not deleted");
+		} else {
+			Log.i("FileDemo", "deleted");
+		}
+		// external storage
+		//----------------------------------------------------------------------------------
+		if(!Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)){
+			Log.e("FilesDemo","sdcard not present");
+			return;
+		}
+
+		//requires permission  - otherwise returns null
+		//<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+		File filePath = new File(this.getExternalFilesDir(null),"demo2.txt");
+		FileOutputStream outStream;
+		try {	
+
+			outStream = new FileOutputStream(filePath);
+
+			OutputStreamWriter extWriter = new OutputStreamWriter(outStream);
+			extWriter.write("1234567890");
+			extWriter.flush();
+			extWriter.close();
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+}

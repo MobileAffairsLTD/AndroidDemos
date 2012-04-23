@@ -1,0 +1,22 @@
+package demos.com;
+
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase.CursorFactory;
+
+public class PeopleDAO extends CustomOpenSQLiteHelper {
+
+	private String TABLE_NAME = "PEOPLE";
+	public PeopleDAO(Context context, String name, CursorFactory factory,
+			int version) {
+		super(context, name, factory, version);		
+	}
+	
+	public void Add(String title){
+		
+	}
+	
+	public void Delete(int id){
+		
+	}
+
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <string name="hello">MapView Demo</string>
+ <string name="app_name">MapView Demo</string>
+ <string name="mapskey">Your Map API Key</string>
+</resources>

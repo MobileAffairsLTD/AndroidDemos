@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;asynctask.com&apos; to &apos;com.mobileaffairs.seminars.asynctask&apos;&#x0D;&#x0A;- Original project: &apos;Async_UsingAsyncTask&apos;&#x0D;&#x0A;- Original element: &apos;Async_UsingAsyncTask/src/asynctask.com&apos;&#x0D;&#x0A;- Renamed element: &apos;Async_UsingAsyncTask/src/com.mobileaffairs.seminars.asynctask&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;asynctask.com&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;asynctask.com" name="com.mobileaffairs.seminars.asynctask" qualified="false" references="true" stamp="1335119726046" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,32 @@
+package demos.com;
+
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteDatabase.CursorFactory;
+import android.database.sqlite.SQLiteOpenHelper;
+
+public class CustomOpenSQLiteHelper extends SQLiteOpenHelper{
+
+	private int getVersion(){
+		
+	}
+	
+	public CustomOpenSQLiteHelper(Context context, String name,
+			CursorFactory factory, int version) {
+		super(context, name, factory, version);
+		
+	}
+
+	@Override
+	public void onCreate(SQLiteDatabase db) {
+		//here comes the database creation code
+	}
+
+	@Override
+	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+		//here comes the database upgrade code
+		
+		
+	}
+
+}

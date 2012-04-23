@@ -1,0 +1,27 @@
+package demos.com;
+
+import java.sql.SQLData;
+
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteDatabase.CursorFactory;
+
+public class PeopleDAO extends CustomOpenSQLiteHelper {
+
+	private String TABLE_NAME = "PEOPLE";
+	public PeopleDAO(Context context, String name, CursorFactory factory,
+			int version) {
+		super(context, name, factory, version);		
+	}
+	
+	public void Add(String title){
+		
+		SQLiteDatabase db = this.getWritableDatabase();
+		db.execSQL("insert into "+TABLE_NAME+"(title)value(?)",new String[]{title})
+	}
+	
+	public void Delete(int id){
+		
+	}
+
+}

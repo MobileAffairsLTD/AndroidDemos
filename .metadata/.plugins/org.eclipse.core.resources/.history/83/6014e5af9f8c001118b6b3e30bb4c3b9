@@ -1,0 +1,42 @@
+package demo.pref.com;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.os.Bundle;
+import android.preference.Preference;
+import android.preference.Preference.OnPreferenceClickListener;
+import android.preference.PreferenceActivity;
+import android.widget.Toast;
+
+public class PreferencesDemoActivity extends PreferenceActivity {
+    /** Called when the activity is first created. */
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        this.addPreferencesFromResource(R.xml.prefs);
+        // Get the custom preference
+        Preference customPref = (Preference) this.findPreference("customPref");
+        customPref
+                        .setOnPreferenceClickListener(new OnPreferenceClickListener() {
+
+                                public boolean onPreferenceClick(Preference preference) {
+                                        Toast.makeText(getBaseContext(),
+                                                        "The custom preference has been clicked",
+                                                        Toast.LENGTH_LONG).show();
+                                        SharedPreferences customSharedPreference = getSharedPreferences(
+                                                        "myCustomSharedPrefs", Activity.MODE_PRIVATE);
+                                        SharedPreferences.Editor editor = customSharedPreference
+                                                        .edit();
+                                        editor.putString("myCustomPref",
+                                                        "The preference has been clicked");
+                                        editor.commit();
+                                        Intent intent = new Intent(PreferencesDemoActivity.this, ReadPrefsActivity.class);
+                                        startActivity(intent);
+                                        return true;
+                                }
+
+                        });
+        
+    }
+}

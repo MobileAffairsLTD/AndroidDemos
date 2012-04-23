@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, SpinnerDemoActivity!</string>
+    <string name="app_name">SpinnerDemo</string>
+    <string-array name="spinnerItemsList"></string-array>
+
+</resources>

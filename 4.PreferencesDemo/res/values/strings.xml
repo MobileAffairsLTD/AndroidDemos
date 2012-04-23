@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, PreferencesDemoActivity!</string>
+    <string name="app_name">PreferencesDemo</string>
+    <string-array name="listArray">
+        <item  >item1</item>
+        <item >item2</item>
+        <item >item3</item>
+    </string-array>
+    <string-array name="listValues">
+        <item >v1</item>
+        <item >v2</item>
+        <item >v3</item>
+    </string-array>
+
+</resources>

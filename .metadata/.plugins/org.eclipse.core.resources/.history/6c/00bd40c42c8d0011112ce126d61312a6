@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="videolib.seminar.com"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="15" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" android:name="VideoLibApplication">
+        <activity
+            android:name=".VideoLibAppActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="VideoDetailsActivity"></activity>
+        <provider android:name="VideoLibContentProvider" android:authorities="videolib.seminar.com.VideoLibContentProvider"></provider>
+        <activity android:name="SyncActivity"></activity>
+        <service android:name="SyncService"></service>
+    </application>
+
+</manifest>

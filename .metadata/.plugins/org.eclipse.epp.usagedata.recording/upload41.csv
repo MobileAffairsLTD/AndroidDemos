@@ -1,0 +1,276 @@
+what,kind,bundleId,bundleVersion,description,time
+activated,perspective,org.eclipse.jdt.ui,,"org.eclipse.jdt.ui.JavaPerspective",1334954170173
+started,bundle,org.eclipse.osgi,3.7.2.v20120110-1415,"org.eclipse.osgi",1334954170174
+started,bundle,org.eclipse.compare.core,3.5.200.I20110208-0800,"org.eclipse.compare.core",1334954170175
+started,bundle,org.eclipse.core.contenttype,3.4.100.v20110423-0524,"org.eclipse.core.contenttype",1334954170175
+started,bundle,org.eclipse.core.databinding.observable,1.4.0.I20110222-0800,"org.eclipse.core.databinding.observable",1334954170176
+started,bundle,org.eclipse.core.expressions,3.4.300.v20110228,"org.eclipse.core.expressions",1334954170177
+started,bundle,org.eclipse.core.filesystem,1.3.100.v20110423-0524,"org.eclipse.core.filesystem",1334954170177
+started,bundle,org.eclipse.core.net,1.2.100.I20110511-0800,"org.eclipse.core.net",1334954170178
+started,bundle,org.eclipse.core.runtime,3.7.0.v20110110,"org.eclipse.core.runtime",1334954170178
+started,bundle,org.eclipse.core.runtime.compatibility,3.2.100.v20100505,"org.eclipse.core.runtime.compatibility",1334954170179
+started,bundle,org.eclipse.core.runtime.compatibility.auth,3.2.200.v20110110,"org.eclipse.core.runtime.compatibility.auth",1334954170180
+started,bundle,org.eclipse.epp.mpc.ui,1.1.1.I20110907-0947,"org.eclipse.epp.mpc.ui",1334954170180
+started,bundle,org.eclipse.epp.usagedata.gathering,1.3.1.R201106061540,"org.eclipse.epp.usagedata.gathering",1334954170180
+started,bundle,org.eclipse.epp.usagedata.recording,1.3.1.R201106061540,"org.eclipse.epp.usagedata.recording",1334954170181
+started,bundle,org.eclipse.equinox.app,1.3.100.v20110321,"org.eclipse.equinox.app",1334954170181
+started,bundle,org.eclipse.equinox.common,3.6.0.v20110523,"org.eclipse.equinox.common",1334954170181
+started,bundle,org.eclipse.equinox.ds,1.3.1.R37x_v20110701,"org.eclipse.equinox.ds",1334954170182
+started,bundle,org.eclipse.equinox.event,1.2.100.v20110502,"org.eclipse.equinox.event",1334954170182
+started,bundle,org.eclipse.equinox.registry,3.5.101.R37x_v20110810-1611,"org.eclipse.equinox.registry",1334954170183
+started,bundle,org.eclipse.equinox.security,1.1.1.R37x_v20110822-1018,"org.eclipse.equinox.security",1334954170184
+started,bundle,org.eclipse.equinox.util,1.0.300.v20110502,"org.eclipse.equinox.util",1334954170184
+started,bundle,org.eclipse.help,3.5.100.v20110426,"org.eclipse.help",1334954170185
+started,bundle,org.eclipse.jdt.apt.core,3.3.500.v20110420-1015,"org.eclipse.jdt.apt.core",1334954170185
+started,bundle,org.eclipse.jsch.core,1.1.300.I20110514-0800,"org.eclipse.jsch.core",1334954170186
+started,bundle,org.eclipse.pde.launching,3.6.0.v20110506,"org.eclipse.pde.launching",1334954170186
+started,bundle,org.eclipse.team.core,3.6.0.I20110525-0800,"org.eclipse.team.core",1334954170187
+started,bundle,org.eclipse.team.cvs.core,3.3.400.I20110510-0800,"org.eclipse.team.cvs.core",1334954170187
+started,bundle,org.eclipse.ui.views.log,1.0.200.v20110404,"org.eclipse.ui.views.log",1334954170188
+started,bundle,org.eclipse.update.configurator,3.3.100.v20100512,"org.eclipse.update.configurator",1334954170188
+started,bundle,org.eclipse.update.core,3.2.500.v20110330,"org.eclipse.update.core",1334954170189
+started,bundle,org.eclipse.update.scheduler,3.2.300.v20100512,"org.eclipse.update.scheduler",1334954170189
+started,bundle,org.eclipse.equinox.simpleconfigurator,1.0.200.v20110815-1438,"org.eclipse.equinox.simpleconfigurator",1334954170190
+started,bundle,com.android.ide.eclipse.adt,18.0.0.v201203301601-306762,"com.android.ide.eclipse.adt",1334954170190
+started,bundle,com.ibm.icu,4.4.2.v20110823,"com.ibm.icu",1334954170190
+started,bundle,org.eclipse.core.filebuffers,3.5.200.v20110928-1504,"org.eclipse.core.filebuffers",1334954170191
+started,bundle,org.eclipse.core.jobs,3.5.101.v20120113-1953,"org.eclipse.core.jobs",1334954170191
+started,bundle,org.eclipse.core.resources,3.7.101.v20120125-1505,"org.eclipse.core.resources",1334954170192
+started,bundle,org.eclipse.core.variables,3.2.500.v20110928-1503,"org.eclipse.core.variables",1334954170192
+started,bundle,org.eclipse.debug.core,3.7.1.v20111129-2031,"org.eclipse.debug.core",1334954170193
+started,bundle,org.eclipse.equinox.p2.core,2.1.1.v20120113-1346,"org.eclipse.equinox.p2.core",1334954170193
+started,bundle,org.eclipse.equinox.p2.directorywatcher,1.0.300.v20110815-1419,"org.eclipse.equinox.p2.directorywatcher",1334954170194
+started,bundle,org.eclipse.equinox.p2.engine,2.1.1.R37x_v20111003,"org.eclipse.equinox.p2.engine",1334954170194
+started,bundle,org.eclipse.equinox.p2.metadata,2.1.0.v20110815-1419,"org.eclipse.equinox.p2.metadata",1334954170194
+started,bundle,org.eclipse.equinox.p2.metadata.repository,1.2.0.v20110815-1419,"org.eclipse.equinox.p2.metadata.repository",1334954170195
+started,bundle,org.eclipse.equinox.p2.operations,2.1.1.R37x_v20111111,"org.eclipse.equinox.p2.operations",1334954170195
+started,bundle,org.eclipse.equinox.p2.reconciler.dropins,1.1.100.v20110815-1419,"org.eclipse.equinox.p2.reconciler.dropins",1334954170196
+started,bundle,org.eclipse.equinox.p2.repository,2.1.1.v20120113-1346,"org.eclipse.equinox.p2.repository",1334954170196
+started,bundle,org.eclipse.equinox.p2.ui.sdk.scheduler,1.0.100.v20110815-1419,"org.eclipse.equinox.p2.ui.sdk.scheduler",1334954170197
+started,bundle,org.eclipse.equinox.p2.updatechecker,1.1.200.v20110815-1419,"org.eclipse.equinox.p2.updatechecker",1334954170197
+started,bundle,org.eclipse.equinox.preferences,3.4.2.v20120111-2020,"org.eclipse.equinox.preferences",1334954170198
+started,bundle,org.eclipse.jdt.core,3.7.3.v20120119-1537,"org.eclipse.jdt.core",1334954170198
+started,bundle,org.eclipse.jdt.core.manipulation,1.4.0.v20110928-1453,"org.eclipse.jdt.core.manipulation",1334954170199
+started,bundle,org.eclipse.jdt.debug,3.7.1.v20111006_r372,"org.eclipse.jdt.debug",1334954170200
+started,bundle,org.eclipse.jdt.junit,3.7.0.v20110928-1453,"org.eclipse.jdt.junit",1334954170200
+started,bundle,org.eclipse.jdt.launching,3.6.1.v20111006_r372,"org.eclipse.jdt.launching",1334954170201
+started,bundle,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui",1334954170201
+started,bundle,org.eclipse.jface,3.7.0.v20110928-1505,"org.eclipse.jface",1334954170202
+started,bundle,org.eclipse.jst.ws.jaxws.utils,1.0.100.v201201031437,"org.eclipse.jst.ws.jaxws.utils",1334954170202
+started,bundle,org.eclipse.ltk.core.refactoring,3.5.201.r372_v20111101-0700,"org.eclipse.ltk.core.refactoring",1334954170203
+started,bundle,org.eclipse.ltk.ui.refactoring,3.6.0.v20110928-1453,"org.eclipse.ltk.ui.refactoring",1334954170203
+started,bundle,org.eclipse.mylyn.bugzilla.core,3.7.0.v20120319-0200,"org.eclipse.mylyn.bugzilla.core",1334954170204
+started,bundle,org.eclipse.mylyn.bugzilla.ui,3.7.0.v20120319-0200,"org.eclipse.mylyn.bugzilla.ui",1334954170204
+started,bundle,org.eclipse.mylyn.commons.core,3.7.0.v20120319-0200,"org.eclipse.mylyn.commons.core",1334954170205
+started,bundle,org.eclipse.mylyn.commons.net,3.7.0.v20120319-0200,"org.eclipse.mylyn.commons.net",1334954170205
+started,bundle,org.eclipse.mylyn.commons.notifications.core,0.9.0.v20120319-0200,"org.eclipse.mylyn.commons.notifications.core",1334954170205
+started,bundle,org.eclipse.mylyn.commons.notifications.feed,0.9.0.v20120319-0200,"org.eclipse.mylyn.commons.notifications.feed",1334954170206
+started,bundle,org.eclipse.mylyn.commons.ui,3.7.0.v20120319-0200,"org.eclipse.mylyn.commons.ui",1334954170207
+started,bundle,org.eclipse.mylyn.commons.workbench,3.7.0.v20120319-0200,"org.eclipse.mylyn.commons.workbench",1334954170208
+started,bundle,org.eclipse.mylyn.context.core,3.7.0.v20120319-0200,"org.eclipse.mylyn.context.core",1334954170208
+started,bundle,org.eclipse.mylyn.context.tasks.ui,3.7.0.v20120319-0200,"org.eclipse.mylyn.context.tasks.ui",1334954170209
+started,bundle,org.eclipse.mylyn.monitor.ui,3.7.0.v20120319-0200,"org.eclipse.mylyn.monitor.ui",1334954170210
+started,bundle,org.eclipse.mylyn.tasks.ui,3.7.0.v20120319-0200,"org.eclipse.mylyn.tasks.ui",1334954170211
+started,bundle,org.eclipse.mylyn.team.ui,3.7.0.v20120319-0200,"org.eclipse.mylyn.team.ui",1334954170211
+started,bundle,org.eclipse.pde.ui,3.6.100.v20120103_r372,"org.eclipse.pde.ui",1334954170213
+started,bundle,org.eclipse.search,3.7.0.v20110928-1504,"org.eclipse.search",1334954170213
+started,bundle,org.eclipse.team.cvs.ui,3.3.401.v20120126-1227,"org.eclipse.team.cvs.ui",1334954170214
+started,bundle,org.eclipse.team.ui,3.6.101.R37x_v20111109-0800,"org.eclipse.team.ui",1334954170215
+started,bundle,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui",1334954170216
+started,bundle,org.eclipse.ui.console,3.5.100.v20111007_r372,"org.eclipse.ui.console",1334954170217
+started,bundle,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.editors",1334954170217
+started,bundle,org.eclipse.ui.forms,3.5.101.v20111011-1919,"org.eclipse.ui.forms",1334954170217
+started,bundle,org.eclipse.ui.ide,3.7.0.v20110928-1505,"org.eclipse.ui.ide",1334954170218
+started,bundle,org.eclipse.ui.net,1.2.100.v20111208-1155,"org.eclipse.ui.net",1334954170219
+started,bundle,org.eclipse.ui.views,3.6.0.v20110928-1505,"org.eclipse.ui.views",1334954170219
+started,bundle,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"org.eclipse.ui.workbench",1334954170220
+started,bundle,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.workbench.texteditor",1334954170220
+started,bundle,org.eclipse.wst.common.project.facet.core,1.4.201.v201201101553,"org.eclipse.wst.common.project.facet.core",1334954170221
+started,bundle,org.eclipse.wst.web,1.1.501.v201201190400,"org.eclipse.wst.web",1334954170222
+os,sysinfo,,,"win32",1334954170225
+arch,sysinfo,,,"x86_64",1334954170225
+ws,sysinfo,,,"win32",1334954170225
+locale,sysinfo,,,"en_US",1334954170225
+processors,sysinfo,,,"8",1334954170225
+java.runtime.name,sysinfo,,,"Java(TM) SE Runtime Environment",1334954170225
+java.runtime.version,sysinfo,,,"1.7.0_03-b05",1334954170225
+java.specification.name,sysinfo,,,"Java Platform API Specification",1334954170225
+java.specification.vendor,sysinfo,,,"Oracle Corporation",1334954170225
+java.specification.version,sysinfo,,,"1.7",1334954170225
+java.vendor,sysinfo,,,"Oracle Corporation",1334954170225
+java.version,sysinfo,,,"1.7.0_03",1334954170225
+java.vm.info,sysinfo,,,"mixed mode",1334954170225
+java.vm.name,sysinfo,,,"Java HotSpot(TM) 64-Bit Server VM",1334954170225
+java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1334954170225
+java.vm.specification.vendor,sysinfo,,,"Oracle Corporation",1334954170225
+java.vm.specification.version,sysinfo,,,"1.7",1334954170225
+java.vm.vendor,sysinfo,,,"Oracle Corporation",1334954170225
+java.vm.version,sysinfo,,,"22.1-b02",1334954170225
+opened,view,org.eclipse.ui.console,3.5.100.v20111007_r372,"org.eclipse.ui.console.ConsoleView",1334954177672
+activated,view,org.eclipse.ui.console,3.5.100.v20111007_r372,"org.eclipse.ui.console.ConsoleView",1334954177805
+activated,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.CompilationUnitEditor",1334954178075
+activated,view,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.PackageExplorer",1334954181463
+started,bundle,org.eclipse.jst.common.project.facet.core,1.4.200.v201103170302,"org.eclipse.jst.common.project.facet.core",1334954181670
+started,bundle,org.eclipse.jst.ws.jaxrs.core,1.0.301.v201108240656,"org.eclipse.jst.ws.jaxrs.core",1334954181672
+started,bundle,org.eclipse.jpt.common.core,1.0.2.v201111103010,"org.eclipse.jpt.common.core",1334954181676
+started,bundle,org.eclipse.jpt.jpa.core,3.0.2.v201201243020,"org.eclipse.jpt.jpa.core",1334954181676
+started,bundle,org.eclipse.wst.sse.core,1.1.602.v201112071516,"org.eclipse.wst.sse.core",1334954181692
+started,bundle,org.eclipse.emf.common,2.7.0.v20120127-1122,"org.eclipse.emf.common",1334954186533
+started,bundle,org.eclipse.emf.ecore,2.7.0.v20120127-1122,"org.eclipse.emf.ecore",1334954186563
+started,bundle,org.eclipse.emf.ecore.xmi,2.7.0.v20120127-1122,"org.eclipse.emf.ecore.xmi",1334954186564
+started,bundle,org.eclipse.wst.common.emf,1.2.100.v201101101900,"org.eclipse.wst.common.emf",1334954186567
+started,bundle,org.eclipse.wst.xml.core,1.1.602.v201201091944,"org.eclipse.wst.xml.core",1334954186750
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1334954187298
+started,bundle,org.eclipse.wst.common.frameworks,1.2.102.v201201190400,"org.eclipse.wst.common.frameworks",1334954187642
+started,bundle,org.eclipse.jem.util,2.1.100.v201103021400,"org.eclipse.jem.util",1334954187658
+started,bundle,org.eclipse.wst.common.emfworkbench.integration,1.2.101.v201107140600,"org.eclipse.wst.common.emfworkbench.integration",1334954187660
+started,bundle,org.eclipse.wst.common.core,1.2.0.v200908252030,"org.eclipse.wst.common.core",1334954187684
+started,bundle,org.eclipse.wst.common.modulecore,1.2.103.v201201190400,"org.eclipse.wst.common.modulecore",1334954187687
+started,bundle,org.eclipse.jst.j2ee.core,1.2.102.v201202090300,"org.eclipse.jst.j2ee.core",1334954187691
+started,bundle,org.eclipse.jem,2.0.501.v201111030500,"org.eclipse.jem",1334954187699
+started,bundle,org.eclipse.wst.common.frameworks.ui,1.2.100.v201105122000,"org.eclipse.wst.common.frameworks.ui",1334954187713
+started,bundle,org.eclipse.wst.validation,1.2.303.v201202090300,"org.eclipse.wst.validation",1334954187721
+started,bundle,org.eclipse.jst.j2ee,1.1.503.v201202090300,"org.eclipse.jst.j2ee",1334954187738
+started,bundle,org.eclipse.wst.jsdt.manipulation,1.0.300.v201104272153,"org.eclipse.wst.jsdt.manipulation",1334954187805
+started,bundle,org.eclipse.wst.jsdt.core,1.1.102.v201111090634,"org.eclipse.wst.jsdt.core",1334954187886
+started,bundle,org.eclipse.wst.jsdt.ui,1.1.102.v201201131900,"org.eclipse.wst.jsdt.ui",1334954187917
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1334954188030
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1334954188042
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1334954189891
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1334954190285
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1334954190293
+activated,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.CompilationUnitEditor",1334954191254
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1334954195335
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1334954196719
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.delete",1334954197070
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1334954198255
+started,bundle,org.eclipse.debug.ui,3.7.102.v20111129-1423_r372,"org.eclipse.debug.ui",1334954199930
+started,bundle,org.eclipse.jdt.junit.core,3.7.0.v20110928-1453,"org.eclipse.jdt.junit.core",1334954200038
+started,bundle,org.eclipse.wst.server.core,1.1.304.v20120208_1420,"org.eclipse.wst.server.core",1334954200104
+started,bundle,org.eclipse.wst.server.ui,1.3.0.v20120210_1439,"org.eclipse.wst.server.ui",1334954200114
+started,bundle,org.eclipse.jdt.debug.ui,3.6.1.v20111006_r372,"org.eclipse.jdt.debug.ui",1334954200224
+started,bundle,com.android.ide.eclipse.ddms,18.0.0.v201203301601-306762,"com.android.ide.eclipse.ddms",1334954200372
+started,bundle,com.android.ide.eclipse.traceview,18.0.0.v201203301601-306762,"com.android.ide.eclipse.traceview",1334954200430
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1334954204821
+opened,view,com.android.ide.eclipse.ddms,18.0.0.v201203301601-306762,"com.android.ide.eclipse.ddms.views.LogCatView",1334954208668
+activated,view,com.android.ide.eclipse.ddms,18.0.0.v201203301601-306762,"com.android.ide.eclipse.ddms.views.LogCatView",1334954208695
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1334954215268
+activated,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.CompilationUnitEditor",1334954215297
+activated,view,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.PackageExplorer",1334954218743
+started,bundle,org.eclipse.wst.sse.ui,1.3.2.v201201041522,"org.eclipse.wst.sse.ui",1334954218876
+started,bundle,org.eclipse.wst.xml.ui,1.1.202.v201112071516,"org.eclipse.wst.xml.ui",1334954218876
+started,bundle,org.eclipse.wst.common.uriresolver,1.1.401.v201004280700,"org.eclipse.wst.common.uriresolver",1334954219102
+started,bundle,org.eclipse.wst.xsl.core,1.1.100.v201102270516,"org.eclipse.wst.xsl.core",1334954219160
+started,bundle,org.eclipse.wst.xsl.exslt.core,1.0.0.v201005240426,"org.eclipse.wst.xsl.exslt.core",1334954219163
+started,bundle,org.eclipse.wst.dtd.ui,1.0.600.v201103171359,"org.eclipse.wst.dtd.ui",1334954219309
+started,bundle,org.eclipse.wst.xsl.ui,1.1.200.v201103082057,"org.eclipse.wst.xsl.ui",1334954219339
+opened,editor,com.android.ide.eclipse.adt,18.0.0.v201203301601-306762,"com.android.ide.eclipse.editors.CommonXmlEditor",1334954220399
+activated,editor,com.android.ide.eclipse.adt,18.0.0.v201203301601-306762,"com.android.ide.eclipse.editors.CommonXmlEditor",1334954220477
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1334954244661
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1334954246482
+activated,view,org.eclipse.ui.console,3.5.100.v20111007_r372,"org.eclipse.ui.console.ConsoleView",1334954246812
+activated,editor,com.android.ide.eclipse.adt,18.0.0.v201203301601-306762,"com.android.ide.eclipse.editors.CommonXmlEditor",1334954247998
+started,bundle,org.eclipse.mylyn.java.tasks,3.7.0.v20120319-0200,"org.eclipse.mylyn.java.tasks",1334954250417
+started,bundle,org.eclipse.jst.jsp.ui,1.1.602.v201112071516,"org.eclipse.jst.jsp.ui",1334954250425
+started,bundle,org.eclipse.jst.jsp.core,1.2.402.v201112071853,"org.eclipse.jst.jsp.core",1334954250445
+started,bundle,org.eclipse.wst.html.ui,1.0.602.v201202091936,"org.eclipse.wst.html.ui",1334954250450
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.cut",1334954250476
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1334954252264
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1334954252850
+activated,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.CompilationUnitEditor",1334954256242
+activated,view,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.PackageExplorer",1334954259752
+activated,editor,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.CompilationUnitEditor",1334954263069
+activated,editor,com.android.ide.eclipse.adt,18.0.0.v201203301601-306762,"com.android.ide.eclipse.editors.CommonXmlEditor",1334954264954
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.cut",1334954281489
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1334954282246
+activated,view,org.eclipse.ui.console,3.5.100.v20111007_r372,"org.eclipse.ui.console.ConsoleView",1334954282641
+activated,editor,com.android.ide.eclipse.adt,18.0.0.v201203301601-306762,"com.android.ide.eclipse.editors.CommonXmlEditor",1334954283697
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.paste",1334954291104
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1334954297289
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1334954302772
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.goto.wordNext",1334954304463
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1334954306440
+executed,command,org.eclipse.ui.workbench.texteditor,3.7.0.v20110928-1504,"org.eclipse.ui.edit.text.goto.wordNext",1334954309231
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1334954312469
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1334954315526
+error,log,,,"LinearLayoutRule.onDropped() failed: org.w3c.dom.DOMException: Not Found",1334954326878
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1334954336869
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1334954341772
+no handler,command,org.eclipse.ui.ide,3.7.0.v20110928-1505,"org.eclipse.jdt.ui.edit.text.java.correction.assist.proposals",1334954342675
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1334954343127
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1334954345284
+no handler,command,org.eclipse.ui.ide,3.7.0.v20110928-1505,"org.eclipse.jdt.ui.edit.text.java.correction.assist.proposals",1334954345547
+no handler,command,org.eclipse.ui.ide,3.7.0.v20110928-1505,"org.eclipse.jdt.ui.edit.text.java.correction.assist.proposals",1334954347642
+no handler,command,org.eclipse.ui.ide,3.7.0.v20110928-1505,"org.eclipse.jdt.ui.edit.text.java.correction.assist.proposals",1334954348868
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1334954353110
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1334954354756
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1334954365863
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1334954370781
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1334954372235
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1334954376941
+started,bundle,org.eclipse.wst.xsl.debug.ui,1.0.200.v201101281837,"org.eclipse.wst.xsl.debug.ui",1334954377790
+started,bundle,org.eclipse.wst.xsl.launching,1.0.200.v201103081922,"org.eclipse.wst.xsl.launching",1334954378314
+started,bundle,org.eclipse.wst.xsl.jaxp.launching,1.0.200.v201103081922,"org.eclipse.wst.xsl.jaxp.launching",1334954378327
+error,log,,,"Current file is not a match for the given config.",1334954378725
+error,log,,,"Current file is not a match for the given config.",1334954378726
+error,log,,,"Current file is not a match for the given config.",1334954378727
+error,log,,,"Current file is not a match for the given config.",1334954378728
+error,log,,,"Current file is not a match for the given config.",1334954378729
+error,log,,,"Current file is not a match for the given config.",1334954378730
+error,log,,,"Current file is not a match for the given config.",1334954378731
+error,log,,,"Current file is not a match for the given config.",1334954378732
+error,log,,,"Current file is not a match for the given config.",1334954378734
+error,log,,,"Current file is not a match for the given config.",1334954378735
+error,log,,,"Current file is not a match for the given config.",1334954378736
+error,log,,,"Current file is not a match for the given config.",1334954378738
+error,log,,,"Current file is not a match for the given config.",1334954378739
+error,log,,,"Current file is not a match for the given config.",1334954378740
+error,log,,,"Current file is not a match for the given config.",1334954378741
+error,log,,,"Current file is not a match for the given config.",1334954378742
+error,log,,,"Current file is not a match for the given config.",1334954378743
+error,log,,,"Current file is not a match for the given config.",1334954378744
+error,log,,,"Current file is not a match for the given config.",1334954378746
+error,log,,,"Current file is not a match for the given config.",1334954378747
+error,log,,,"Current file is not a match for the given config.",1334954378748
+error,log,,,"Current file is not a match for the given config.",1334954378749
+error,log,,,"Current file is not a match for the given config.",1334954378750
+error,log,,,"Current file is not a match for the given config.",1334954378751
+error,log,,,"Current file is not a match for the given config.",1334954378752
+error,log,,,"Current file is not a match for the given config.",1334954378753
+error,log,,,"Current file is not a match for the given config.",1334954378753
+error,log,,,"Current file is not a match for the given config.",1334954378755
+error,log,,,"Current file is not a match for the given config.",1334954378756
+error,log,,,"Current file is not a match for the given config.",1334954378756
+error,log,,,"Current file is not a match for the given config.",1334954378757
+error,log,,,"Current file is not a match for the given config.",1334954378758
+error,log,,,"Current file is not a match for the given config.",1334954378759
+error,log,,,"Current file is not a match for the given config.",1334954378760
+error,log,,,"Current file is not a match for the given config.",1334954378761
+error,log,,,"Current file is not a match for the given config.",1334954378762
+error,log,,,"Current file is not a match for the given config.",1334954378763
+error,log,,,"Current file is not a match for the given config.",1334954378764
+error,log,,,"Current file is not a match for the given config.",1334954378765
+error,log,,,"Current file is not a match for the given config.",1334954378766
+error,log,,,"Current file is not a match for the given config.",1334954378767
+error,log,,,"Current file is not a match for the given config.",1334954378768
+error,log,,,"Current file is not a match for the given config.",1334954378769
+error,log,,,"Current file is not a match for the given config.",1334954378770
+error,log,,,"Current file is not a match for the given config.",1334954378771
+error,log,,,"Current file is not a match for the given config.",1334954378772
+error,log,,,"Current file is not a match for the given config.",1334954378773
+error,log,,,"Current file is not a match for the given config.",1334954378774
+error,log,,,"Current file is not a match for the given config.",1334954378775
+error,log,,,"Current file is not a match for the given config.",1334954378776
+error,log,,,"Current file is not a match for the given config.",1334954378777
+error,log,,,"Current file is not a match for the given config.",1334954378778
+error,log,,,"Current file is not a match for the given config.",1334954378779
+error,log,,,"Current file is not a match for the given config.",1334954378780
+error,log,,,"Current file is not a match for the given config.",1334954378781
+error,log,,,"Current file is not a match for the given config.",1334954378782
+error,log,,,"Current file is not a match for the given config.",1334954378783
+error,log,,,"Current file is not a match for the given config.",1334954378784
+error,log,,,"Current file is not a match for the given config.",1334954378785
+error,log,,,"Current file is not a match for the given config.",1334954378786
+error,log,,,"Current file is not a match for the given config.",1334954378787
+error,log,,,"Current file is not a match for the given config.",1334954378788
+error,log,,,"Current file is not a match for the given config.",1334954378789

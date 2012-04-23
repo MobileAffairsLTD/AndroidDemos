@@ -1,0 +1,7 @@
+1335113387638	Rename package 'demo.drawbales.com'
+1335114989106	Extracts string 'First Name' into R.string.first_name
+1335114997219	Extracts string 'Last Name' into R.string.last_name
+1335115009801	Extracts string 'Back' into R.string.back
+1335115116201	Extracts string 'Enter your last name' into R.string.enter_your_last_name
+1335115138261	Extracts string 'Enter your first name' into R.string.enter_your_first_name
+1335115225315	Extracts string 'ToggleButton' into R.string.togglebutton

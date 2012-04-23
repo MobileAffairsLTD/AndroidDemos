@@ -1,0 +1,18 @@
+INDEX VERSION 1.126+D:\AndroidSeminars\DemosWorkspace\.metadata\.plugins\org.eclipse.jdt.core
+2990631003.index
+792313579.index
+1591496015.index
+472138884.index
+2940196613.index
+3756474952.index
+3069507018.index
+931585877.index
+285827828.index
+3898010436.index
+4213033029.index
+2532735696.index
+3358280815.index
+107580184.index
+783419170.index
+1758635226.index
+2786917069.index

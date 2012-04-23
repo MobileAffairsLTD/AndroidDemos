@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+02
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+03
+        android:orientation="vertical"
+04
+    android:layout_width="fill_parent"
+05
+    android:layout_height="wrap_content" >
+06
+    <ListView
+07
+        android:id="@android:id/android:list"
+08
+        android:layout_width="fill_parent"
+09
+        android:layout_height="wrap_content" />
+10
+</LinearLayout>

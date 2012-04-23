@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <string name="hello">Hello World, HelloGoogleMaps!</string>
+ <string name="app_name">Hello,GoogleMaps</string>
+ <string name="mapskey">0H9r7smUU9bEM_taMcgGtxTLneSnLmDafyB7PvQ</string>
+</resources>

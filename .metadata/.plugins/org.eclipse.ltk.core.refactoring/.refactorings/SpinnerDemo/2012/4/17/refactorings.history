@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;spinne.demo.com&apos; to &apos;com.mobileaffairs.seminar.spinner&apos;&#x0D;&#x0A;- Original project: &apos;SpinnerDemo&apos;&#x0D;&#x0A;- Original element: &apos;SpinnerDemo/src/spinne.demo.com&apos;&#x0D;&#x0A;- Renamed element: &apos;SpinnerDemo/src/com.mobileaffairs.seminar.spinner&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;spinne.demo.com&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;spinne.demo.com" name="com.mobileaffairs.seminar.spinner" qualified="false" references="true" stamp="1335175036238" textual="false" version="1.0"/>
+</session>

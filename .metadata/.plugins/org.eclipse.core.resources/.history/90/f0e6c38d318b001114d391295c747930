@@ -1,0 +1,52 @@
+package service.demo.com;
+
+import android.app.Activity;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+
+public class ServiceDemoActivity extends Activity {
+  
+	
+	//broadcast receiver to listen for progress updates from the sync service
+		 private final BroadcastReceiver mIntentReceiver = new BroadcastReceiver() {
+		        @Override
+		        public void onReceive(Context context, Intent intent) {
+		            if(intent.getAction().equals(MyService.MYCUSTOMINTENT)) {
+		                int progressValue = intent.getIntExtra("progress", 100);
+		            	//syncing is not done, yet, show progress
+		                if(progressValue<100){
+		            		startProgress();
+		            		Button btnSync  = (Button)findViewById(R.id.btnSync);
+		            		btnSync.setEnabled(false);
+		            	}
+		            	else
+		            	//syncing is done, close progress bar
+		            	if(progressValue==100)
+		            	{
+		            		Button btnSync  = (Button)findViewById(R.id.btnSync);
+		            		stopProgress();
+		            		btnSync.setEnabled(true);
+		            	}
+		            }
+		        }
+		    };
+		    
+	
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
+        
+        
+        
+    }
+    
+    
+    public void runLongOperation(View v){   
+    	Intent intent = new Intent(getApplicationContext(), MyService.class);    	
+    	startService(intent);
+    }
+}

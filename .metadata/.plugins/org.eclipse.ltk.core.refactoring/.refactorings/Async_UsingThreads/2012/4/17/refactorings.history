@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;threads.using.com&apos; to &apos;com.mobileaffairs.seminars.threads&apos;&#x0D;&#x0A;- Original project: &apos;Async_UsingThreads&apos;&#x0D;&#x0A;- Original element: &apos;Async_UsingThreads/src/threads.using.com&apos;&#x0D;&#x0A;- Renamed element: &apos;Async_UsingThreads/src/com.mobileaffairs.seminars.threads&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;threads.using.com&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;threads.using.com" name="com.mobileaffairs.seminars.threads" qualified="false" references="true" stamp="1335119843743" textual="false" version="1.0"/>
+</session>

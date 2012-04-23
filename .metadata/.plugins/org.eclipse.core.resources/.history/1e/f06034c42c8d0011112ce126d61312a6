@@ -1,0 +1,77 @@
+package videolib.seminar.com;
+
+import com.mobileaffairs.seminar.videolib.VideoLibDatabase;
+import com.mobileaffairs.seminar.videolib.VideosCursor;
+
+import android.content.ContentValues;
+import android.content.Context;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteQueryBuilder;
+
+public class VideosDAO extends VideoLibDatabase {
+
+	private final static String VIDEO_TABLE = "videos";
+	
+	public VideosDAO(Context context) {
+		super(context, new VideosCursor.Factory()); 
+	}
+
+	public VideosCursor getVideoList(CharSequence title,Integer maxRows){
+		SQLiteDatabase db = this.getWritableDatabase();
+		//Cursor cursor = db.query("videos", new String[]{"_id","title","duration"}, "title like '?'", new String[]{"%"+title+"%"},"", "", "title", "");
+		VideosCursor cursor = null;
+		if(title!=null && title.length()>0)
+			cursor = (VideosCursor) db.rawQuery("select * from "+VIDEO_TABLE+" where title like ? limit ?",new String[]{"%"+title.toString()+"%",maxRows.toString()});
+		else
+			cursor =(VideosCursor) db.rawQuery("select * from "+VIDEO_TABLE+" limit ?",new String[]{maxRows.toString()}); 
+		cursor.moveToFirst();
+		return cursor;
+	}		
+	
+	public long insert(ContentValues values){
+		SQLiteDatabase db = this.getWritableDatabase();
+		long pk = db.insert(VIDEO_TABLE, "", values);
+		db.close();
+		return pk;
+	}
+	
+	public int update(ContentValues values,String selection,String[] selectionsArgs){
+		SQLiteDatabase db = this.getWritableDatabase();		
+		int recsAffected = db.update(VIDEO_TABLE,values,selection,selectionsArgs);
+		db.close();
+		return recsAffected;
+		
+	}
+	
+	public Cursor query(String[] projection,String selection ,String[] selectionArgs,String sortOrder){
+		SQLiteDatabase db = getReadableDatabase();
+		SQLiteQueryBuilder sqlBuilder = new SQLiteQueryBuilder();
+		sqlBuilder.setTables(VIDEO_TABLE);
+		Cursor c = sqlBuilder.query(
+		db,
+		projection,
+		selection,
+		selectionArgs,
+		null,
+		null,
+		sortOrder);
+		return c;
+	}
+	
+	public int delete(String selection,String[] selectionsArgs){
+		SQLiteDatabase db = this.getWritableDatabase();	
+		int recsAffected = db.delete(VIDEO_TABLE,selection,selectionsArgs);
+		return recsAffected;
+		
+	}	
+}
+
+
+
+
+    
+    
+
+
+

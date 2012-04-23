@@ -1,0 +1,6 @@
+package service.demo.com;
+
+public class MyService extends Sevice {
+
+		
+}

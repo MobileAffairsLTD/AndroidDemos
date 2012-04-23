@@ -1,0 +1,6 @@
+package demos.com;
+
+public class MyContentProvider extends ContentProvider{
+	
+
+}
